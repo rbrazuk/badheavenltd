@@ -1,0 +1,125 @@
+.shows-container {
+  font-size: 1.25rem;
+}
+
+.row {
+  position: relative;
+}
+
+.show-info-container, .buttons-container {
+  display: inline;
+  width: 50%;
+  float: left;
+  padding: 10px 0;
+}
+
+.buttons-container a:first-child {
+  margin-right: 0;
+}
+
+.shows-list {
+  text-align: left;
+  width: 100%;
+  padding-left: 0;
+}
+
+.shows-list li {
+  padding: 0;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.shows-list li .row {
+  margin: 0;
+}
+
+.shows-list li .row::after {
+  display: block;
+  content: '';
+  height:1px;
+  background-color: #ccc;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.shows-list li:last-child .row::after {
+  height: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.shows-list-date {
+  margin-bottom: 5px;
+  color: #6D8157;
+}
+
+.shows-list-button {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  margin: 0 auto 10px auto;
+  display: block;
+  width: 90%;
+  float: right;
+  color: #555 !important;
+}
+
+.disabled {
+  color: #CCC !important;
+}
+
+.other-bands {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .shows {
+    width: 80%;
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .other-bands {
+    font-size: 1rem;
+  }
+
+  .shows-list-button {
+    display: inline;
+    width: 25%;
+    margin: 10px;
+  }
+
+  .shows-list-button:hover {
+    border: 1px solid #AD5C4C;
+    background: #AD5C4C;
+    color: #fff !important;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .shows-list-button:hover {
+    color: #fff;
+  }
+
+  .disabled:hover {
+    background-color: #fff;
+    border-color: #ccc;
+    color: #ccc !important;
+  }
+
+  .show-info-div {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .other-bands {
+    margin-top: 10px;
+  }
+}
