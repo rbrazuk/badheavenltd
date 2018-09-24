@@ -1,6 +1,7 @@
 .releases-list {
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 .releases-list-item {
